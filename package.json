@@ -1,10 +1,10 @@
 {
   "name": "@circlesac/aws-lambda-toolkit",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "type": "module",
   "scripts": {
     "barrels": "barrels",
-    "build": "barrels && npx @circlesac/tscc --include src",
+    "build": "rimraf dist && barrels && npx @circlesac/tscc --include src",
     "lint": "npm run lint:eslint && npm run lint:prettier && npm run lint:biome",
     "lint:eslint": "npx eslint . --fix",
     "lint:prettier": "npx prettier '**/*.{ts,tsx,js,jsx,json,md,cjs,mjs,mts,yml,yaml}' --write",
@@ -17,11 +17,12 @@
     "@tszen/trycatch": "^0.1.0"
   },
   "devDependencies": {
-    "@circlesac/tscc": "^0.0.6",
+    "@circlesac/tscc": "^0.0.7",
     "@piondev/shared-configs": "^1.0.35",
     "@tsed/barrels": "^6.2.1",
     "@types/aws-lambda": "^8.10.148",
     "@types/node": "^22.13.14",
+    "rimraf": "^6.0.1",
     "typescript": "^5.8.2"
   },
   "main": "dist/cjs/index.js",
@@ -39,7 +40,9 @@
       }
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "publishConfig": {
     "access": "public"
   },

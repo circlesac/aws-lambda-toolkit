@@ -664,10 +664,10 @@
   resolved "https://registry.npmjs.org/@biomejs/cli-win32-x64/-/cli-win32-x64-1.9.4.tgz#4c7afa90e3970213599b4095e62f87e5972b2340"
   integrity sha512-8Y5wMhVIPaWe6jw2H+KlEm4wP/f7EW3810ZLmDlrEEy5KvBsb9ECEfu/kMWD484ijfQ8+nIi0giMgu9g1UAuuA==
 
-"@circlesac/tscc@^0.0.6":
-  version "0.0.6"
-  resolved "https://registry.npmjs.org/@circlesac/tscc/-/tscc-0.0.6.tgz#b76bd7b4cb168b59ad37f4f171ae9d672e429008"
-  integrity sha512-CmGahlKev9PiTEbN545yp8oPRHl+MOcloYrYtgXEoRlFTz08aePmVYwqiJJBm68B5W2+UEl3yURDce8IZVO1Mw==
+"@circlesac/tscc@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.npmjs.org/@circlesac/tscc/-/tscc-0.0.7.tgz#b9332daa4991dfb725d52e9c5975dc8b26e20fe9"
+  integrity sha512-Njzcrg8CZsmYg2/HZAZqIn+xWlKnINyjZU43rF/Rix07DMEtnSE61Fa1c8fMvxvPLxI6cNaBFOKdrtI9yRTtVg==
   dependencies:
     "@babel/core" "^7.26.10"
     babel-plugin-add-import-extension "^1.6.0"
@@ -1754,7 +1754,7 @@ glob-parent@^6.0.2:
   dependencies:
     is-glob "^4.0.3"
 
-glob@^11.0.1:
+glob@^11.0.0, glob@^11.0.1:
   version "11.0.1"
   resolved "https://registry.npmjs.org/glob/-/glob-11.0.1.tgz#1c3aef9a59d680e611b53dcd24bb8639cef064d9"
   integrity sha512-zrQDm8XPnYEKawJScsnM0QzobJxlT/kHOOlRTio8IH/GrmxRE5fjllkzdaHclIuNjUQTJYH2xHNIGfdpJkDJUw==
@@ -2080,6 +2080,14 @@ reusify@^1.0.4:
   version "1.1.0"
   resolved "https://registry.npmjs.org/reusify/-/reusify-1.1.0.tgz#0fe13b9522e1473f51b558ee796e08f11f9b489f"
   integrity sha512-g6QUff04oZpHs0eG5p83rFLhHeV00ug/Yf9nZM6fLeUrPguBTkTQOdpAWWspMh55TZfVQDPaN3NQJfbVRAxdIw==
+
+rimraf@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.npmjs.org/rimraf/-/rimraf-6.0.1.tgz#ffb8ad8844dd60332ab15f52bc104bc3ed71ea4e"
+  integrity sha512-9dkvaxAsk/xNXSJzMgFqqMCuFgt2+KsOFek3TMLfo8NCPfWpBmqwyNn5Y+NX56QUYfCtsyhF3ayiboEoUmJk/A==
+  dependencies:
+    glob "^11.0.0"
+    package-json-from-dist "^1.0.0"
 
 run-parallel@^1.1.9:
   version "1.2.0"
